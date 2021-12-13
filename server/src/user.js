@@ -30,8 +30,8 @@ export function verifPassword(password) {
 export function pass(args) {
   let result = "";
   if (verifPassword(args))
-    result = "230 Password Authentication is successfull. \r\n";
-  else result = "530 Wrong Password.\r\n";
+    result = "Password Authentication is successfull. \r\n";
+  else result = "Wrong Password.\r\n";
 
   return result;
 }
